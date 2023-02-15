@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+
+}
+
+html{
+  scroll-behavior: smooth;
+  
+}
+
+section{
+
+}
+
+nav{
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.2);
+    position: fixed;
+    background: #0a0a0a;
+    color: #fff;
+    width: 100%;
+    z-index: 1;
+}
+
+nav h2{
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+nav h2 span{
+    margin: 0 5px;
+}
+
+nav #menu{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    display: none;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+ul li{
+    margin: 0 20px;
+}
+
+ul li a{
+    color: #888;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+ul li a:hover{
+    color: #dadada;
+}
+
+@media (min-width: 260px) and (max-width: 480px) {
+    nav {
+        display: block;
+    }
+
+    nav #menu{
+        display: block;
+    }
+    nav ul {
+        display: none;
+        padding: 20px 5px;
+        transition:  2s ease;
+    }
+
+    nav ul.active{
+        display: block;
+    }
+
+    ul li{
+        margin: 10px 20px;
+    }
+  }
+
+  .cont{
+    background: url(/gym.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cont .text{
+    text-align: center;
+    width: 50%;
+  }
+
+  .cont .text h2{
+    color: white;
+    font-size: 40px;
+  }
+
+  .cont .text p{
+    color: #dddddd;
+    margin-bottom: 30px;
+  }
+
+  .cont .text a{
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border-radius: 3px;
+  }
+
+  /* Facilities */
+  .facilities{
+    padding: 40px 0px;
+    background: linear-gradient(white,black);
+    color: #fff;
+  }
+
+  .cardlist{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .facilities .text{
+    text-align: center;
+    color: #000;
+  }
+
+  .cardlist .cards{
+    width: 30%;
+    height: 500px;
+    margin: 30px 10px;
+    text-align: center;
+  }
+
+  .cardlist .cards h2{
+   
+  }
+
+  .cardlist .cards img{
+    width: 100%;
+    height: 100%;
+    transition: transform .5s;
+  }
+
+  .cardlist .cards img:hover{
+    /* padding: 300px; */
+    transform: translateY(10px);
+  }
+
+  @media (min-width: 260px) and (max-width: 650px) {
+    .cardlist{
+      flex-direction: column;
+    }
+
+    .cardlist .cards{
+      width: 80%;
+    }
+  }
+
+
+  /* Pricing */
+
+  .pricing{
+    width: 100%;
+  }
+
+  .pricecon{
+    margin: 0 auto;
+    padding: 30px 22px;
+  }
+
+  .head{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+
+  .price{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: -4px; */
+    padding: 30px 22px;
+  }
+
+  .sliplist{
+    padding: 10px;
+    width: 25%;
+    padding: 30px 22px;
+  }
+
+  .slip{
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border: 2px gray solid;
+    padding: 30px 22px;
+  }
+
+  .slip h2{
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .slip h1{
+    font-size: 28px;
+    line-height: 1;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+
+  
+
+  .slip p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .slip .point{
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    margin-right: 8px;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 100%;
+    flex-shrink: 0;
+  }
+
+  .slip .btn{
+    display: flex;
+    align-items:center;
+    margin-top: auto;
+    color: white;
+    background: gray;
+    border: 0;
+    padding: 12px 8px;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .slip .btn .arrow{
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    margin-bottom: 8px;
+  }
+
+  .slip .btntxt{
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
+  @media (min-width: 260px) and (max-width: 680px) {
+    .sliplist{
+      width: 100%;
+    }
+  }
+
+  @media  (min-width: 680px) {
+    .sliplist{
+      width: 50%;
+    }
+  }
+
+
+  footer{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.4);
+    background: #0a0a0a;
+    color: #fff;
+  }
+
+  footer h2{
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+footer h2 span{
+    margin: 0 5px;
+}
+
+footer #menu{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    display: none;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+}
+
+footer ul li{
+    margin: 0 20px;
+}
+
+footer ul li a{
+    color: #888;
+    text-decoration: none;
+    transition: color .3s;
+    margin-left: 12px;
+}
+
+footer ul li a svg{
+  width: 18px;
+}
+
+footer ul li a:hover{
+    color: #dddddd;
+}
